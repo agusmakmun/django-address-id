@@ -5,7 +5,9 @@ from django.db import models
 from django.conf import settings
 from django.forms.models import model_to_dict
 from django.utils.translation import ugettext_lazy as _
-from django.utils.encoding import python_2_unicode_compatible
+# from django.utils.encoding import python_2_unicode_compatible
+# I think the above import is outdated therefore the new import is the one below
+from six import python_2_unicode_compatible
 
 from .utils import parse_json_string
 
